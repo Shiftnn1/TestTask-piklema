@@ -1,0 +1,78 @@
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.task {
+    width: 450px;
+    min-height: 50px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    transition: .3s;
+    color: rgba(240, 248, 255, 0.877);
+}
+    .task-status-done {
+        background-color:#b7f8ac81 ;
+    }
+    .task-status-undone {
+        background-color: #ffffff0e;
+    }
+
+.task-status-button-undone{
+    border: 1px solid rgb(255, 255, 255);
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+    .task-status-button-done {
+        background-color: #3bdb238c;
+    }
+
+.task-value {
+    /* border: 1px solid white; */
+    max-width: 80%;
+    height: fit-content;
+    overflow-wrap: break-word;
+    margin: 10px 15px;
+}
+.task-button-option{
+    /* border: 1px solid red; */
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+}
+.task-button-option:hover {
+    background-color: #ffffffec;
+}
+.task-button-option:nth-child(2):before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 5px;
+    background-color: rgba(255, 0, 0, 0.945);
+}
+.task-button-option:nth-child(3)::before {
+    content: url("../imgs/bxs-pencil.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

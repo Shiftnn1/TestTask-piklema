@@ -1,0 +1,17 @@
+::placeholder {
+    color: rgb(216, 208, 208);
+}
+
+textarea:focus {
+  outline: none;
+}
+textarea {
+    height: 120px;
+    width: 250px;
+    background-color: #363434;
+    border: 0;
+    color: white;
+    font-size: medium;
+    padding-left: 10px;
+    border-radius: 10px;
+}

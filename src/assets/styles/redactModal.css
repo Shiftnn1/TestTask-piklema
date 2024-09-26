@@ -1,0 +1,42 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal-button {
+    width: 75px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.modal-button:nth-child(1) {
+    background-color: rgba(233, 96, 96, 0.808);
+    color: white;
+    font-weight: medium;
+}
+.modal-button:nth-child(1):hover {
+    background-color: rgba(255, 58, 58, 0.808);
+}
+.modal-button:nth-child(2) {
+    background-color: rgba(162, 233, 96, 0.808);
+    color: white;
+    font-weight: medium;
+    font-size: large;
+}
+
+.modal-button:nth-child(2):hover {
+    background-color: rgba(150, 255, 52, 0.808);
+}
